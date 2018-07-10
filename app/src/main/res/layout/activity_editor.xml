@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:id="@+id/text_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_name"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/edit_productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName"
+            android:hint="@string/category_product_name" />
+
+        <TextView
+            android:id="@+id/text_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_productName"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_price"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/edit_productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_productPrice"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName"
+            android:hint="@string/category_price"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text_productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_productPrice"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_quantity"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/edit_productQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_productQuantity"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName"
+            android:hint="@string/category_quantity"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text_supplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_productQuantity"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_supplier_name"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/edit_supplierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_supplierName"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName"
+            android:hint="@string/category_supplier_name" />
+
+
+        <TextView
+            android:id="@+id/text_supplierPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_supplierName"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_supplier_phone"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/edit_supplierPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_supplierPhoneNumber"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName"
+            android:hint="@string/category_supplier_phone"
+            android:inputType="phone" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

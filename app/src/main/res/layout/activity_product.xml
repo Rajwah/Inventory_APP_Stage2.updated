@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.bookStore.ProductActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:id="@+id/text_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_product_name"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_productNameValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName" />
+
+        <TextView
+            android:id="@+id/text_productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_productName"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_price"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_productPriceValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_productPrice"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName" />
+
+        <TextView
+            android:id="@+id/text_productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_productPrice"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_quantity"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_productQuantityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_productQuantity"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/text_productQuantity"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text_productQuantityValue"
+            android:background="@color/colorPrimary"
+            android:text="@string/label_plus"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/text_productQuantity"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/button_plus"
+            android:background="@color/colorPrimary"
+            android:text="@string/label_minus"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_supplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_productQuantity"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_supplier_name"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_supplierNameValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_supplierName"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName" />
+
+
+        <TextView
+            android:id="@+id/text_supplierPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_supplierName"
+            android:layout_marginTop="30dp"
+            android:text="@string/category_supplier_phone"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/text_supplierPhoneNumberValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_supplierPhoneNumber"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/text_productName" />
+
+        <Button
+            android:id="@+id/button_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/text_supplierPhoneNumber"
+            android:layout_below="@id/text_productName"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/text_supplierPhoneNumberValue"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawableTint="@color/white"
+            android:paddingLeft="8dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/label_delete"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+</LinearLayout>

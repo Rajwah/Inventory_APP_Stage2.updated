@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_inventory"
+            android:icon="@drawable/ic_add"
+            android:title="Add Inventory" />
+        <item
+            android:id="@+id/nav_product_list"
+            android:icon="@drawable/ic_view_list"
+            android:title="Product Catalog" />
+    </group>
+
+</menu>

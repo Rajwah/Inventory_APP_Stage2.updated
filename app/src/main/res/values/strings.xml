@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Name for the application [CHAR LIMIT=12] -->
+    <string name="app_name">Book store</string>
+
+    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Pets</string>
+
+    <!-- Title for the activity to add a new pet [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_pet">Add a Pet</string>
+
+    <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_overview">Overview</string>
+
+    <!-- Label for gender information in the editor [CHAR LIMIT=30] -->
+    <string name="category_gender">Gender</string>
+
+    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
+    <string name="category_measurement">Measurement</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_pet_name">Name</string>
+
+    <!-- Text hint for breed field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_pet_breed">Breed</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_pet_weight">Weight</string>
+
+    <!-- Units for weight of the pet (kilograms) [CHAR LIMIT=5] -->
+    <string name="unit_pet_weight">kg</string>
+
+    <!-- Label for dropdown menu option if the pet's gender is unknown [CHAR LIMIT=20] -->
+    <string name="gender_unknown">Unknown</string>
+
+    <!-- Label for dropdown menu option if the pet is male [CHAR LIMIT=20] -->
+    <string name="gender_male">Male</string>
+
+    <!-- Label for dropdown menu option if the pet is female [CHAR LIMIT=20] -->
+    <string name="gender_female">Female</string>
+
+    <string name="category_product_name">Product Name</string>
+    <string name="category_price">Price</string>
+    <string name="category_quantity">Quantity</string>
+    <string name="category_supplier_name">Supplier Name</string>
+    <string name="category_supplier_phone">Supplier Phone</string>
+
+    <!-- Labels Used in Screens-->
+    <string name="label_edit">Edit</string>
+    <string name="label_sale">Sale</string>
+    <string name="label_product_name" formatted="false">%1s ) %2s</string>
+    <string name="label_product_price">Price : %s S.R</string>
+    <string name="label_product_quantity">Quantity : %s</string>
+    <string name="label_product_saved_success">Product saved successfully</string>
+    <string name="label_product_deleted_success">Product deleted successfully</string>
+    <string name="label_plus">+</string>
+    <string name="label_minus">-</string>
+    <string name="label_delete">Delete</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Screen Names -->
+    <string name="title_activity_main">Product Catalog</string>
+    <string name="title_activity_add">Add New Product</string>
+    <string name="title_activity_edit">Edit Product</string>
+    <string name="title_activity_product_view">Product View</string>
+
+    <!-- Alert -->
+    <string name="alert_delete_product">Delete this Product?</string>
+</resources>

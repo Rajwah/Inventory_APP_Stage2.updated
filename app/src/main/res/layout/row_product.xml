@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/text_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="1 )  Pro 1"
+        android:textColor="@color/blue_amount"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_itemName"
+        android:layout_marginLeft="16dp"
+        android:text="Price : 10 S.R"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_itemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/text_itemName"
+        android:text="Quantity : 5"
+        android:textColor="@color/blue_amount"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/text_itemQuantity"
+        android:layout_below="@id/text_itemQuantity"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_cart"
+        android:drawableTint="@android:color/white"
+        android:padding="10dp"
+        android:text="@string/label_sale"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_itemQuantity"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/text_sale"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_pencil"
+        android:drawableTint="@android:color/white"
+        android:padding="10dp"
+        android:text="@string/label_edit"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_edit"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey_light" />
+
+</RelativeLayout>
